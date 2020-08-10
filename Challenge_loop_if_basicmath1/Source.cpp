@@ -2,7 +2,7 @@
 #include<math.h>
 
 int main() {
-	int a, b, i, x = 0;
+	int a, b, x = 0;
 	float y = 0, z = 0, SD;
 	scanf_s("%d %d", &a, &b);
 	if (a == b) {
@@ -14,7 +14,7 @@ int main() {
 
 	}
 	else if (a < b) {
-		for (i == b; a <= b; a++) {
+		for (; a <= b; a++) {
 			printf("%d  ", a);
 			x += a;
 			y += 1;
@@ -25,7 +25,7 @@ int main() {
 		printf("\nSD = %.2f", SD);
 	}
 	else if (a > b) {
-		for (i == a; b <= a; b++) {
+		for (; b <= a; b++) {
 			printf("%d  ", b);
 			x += b;
 			y += 1;
